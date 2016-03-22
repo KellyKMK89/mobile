@@ -1,0 +1,27 @@
+.logged-in {
+
+  p {
+    margin: 20px 0;
+    line-height: 22px;
+    font-size: 16px;
+  }
+
+  img{
+    display: block;
+    margin: 0 auto;
+  }
+
+  h3{
+    text-align: center;
+  }
+
+}
+
+body #a0-lock.a0-theme-default,
+body #a0-widget {
+  button.a0-primary{
+    background: rgba(0,50,150);
+  }
+}
+
+

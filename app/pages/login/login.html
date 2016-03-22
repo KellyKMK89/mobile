@@ -1,0 +1,27 @@
+<ion-navbar *navbar>
+    <button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Hospo360 Mobile</ion-title>
+</ion-navbar>
+
+<ion-content class="logged-out" *ngIf="!auth.authenticated()">
+    <h3>Hospo360 Mobile</h3>
+    <p>Please log in</p>
+    <p>
+        <button (click)="login()">Login</button>
+    </p>
+</ion-content>
+
+<ion-content class="logged-in" *ngIf="auth.authenticated()">
+    <h3>Welcome to Hospo360!</h3>
+    <ion-card>
+        <ion-item>
+            <ion-avatar item-left>
+                <img src="http://findicons.com/files/icons/560/fast_icon_users/128/user.png">
+                <p>You are logged in.</p>
+            </ion-avatar>
+        </ion-item>
+    </ion-card>
+    <button (click)="logout()">Logout</button>
+</ion-content>
